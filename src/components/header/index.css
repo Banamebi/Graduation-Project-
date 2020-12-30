@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #39A6FD;
+  background-color: #DC143C;
   color: #ffffff;
   z-index: 100;
 }

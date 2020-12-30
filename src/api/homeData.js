@@ -1,15 +1,18 @@
-      //   轮播图
+
       export const swipeList = [
           "/swiper1.jpg",
           "/swiper2.jpg",
           "/swiper3.jpg",
           "/swiper4.jpg"
+      ];
+      export const titleList = [
+        "/new.png"
       ]
-      //   活动列表
+
       export const activeList = [{
-              bigTitle: "有好货",
-              titleIntroduce: "与品质生活不期而遇",
-              titleImg: "https://img.alicdn.com/tfs/TB1tqpnegMPMeJjy1XcXXXpppXa-148-48.png",
+              bigTitle: "新品",
+
+
               list: [{
                       smallTitle: "可折叠加厚双面使用榻榻米床垫",
                       introduce: "可以折叠的榻榻米床垫，收纳不占空间，正反两面都可以使用，同时纯棉材质舒适亲肤，透气性好，保持贴身换将干爽 不粘腻。",
@@ -42,44 +45,7 @@
                   }
               ]
           },
-          {
-              bigTitle: "爱逛街",
-              titleIntroduce: "献给聪明可爱的你",
-              titleImg: "https://img.alicdn.com/tfs/TB1UNX2bSFRMKJjy0FhXXX.xpXa-112-46.png",
-              list: [{
-                      smallTitle: "",
-                      introduce: "2017新款潮女士双肩包韩版时尚休闲百搭pu软皮背包个性简约包包",
-                      img: "https://img.alicdn.com/bao/uploaded/TB28TQ1nrBmpuFjSZFAXXaQ0pXa_!!2996832334.png_180x180xzq90.jpg_.webp"
-                  },
-                  {
-                      smallTitle: "",
-                      introduce: "美国艾蒂宝趴趴枕午睡枕趴睡枕学生小午睡神器办公室抱枕午休枕头",
-                      img: "https://img.alicdn.com/bao/uploaded/TB2jH_uoFXXXXXfXpXXXXXXXXXX_!!0-dgshop.jpg_180x180xzq90.jpg_.webp"
-                  },
-                  {
-                      smallTitle: "",
-                      introduce: "香港进口特产美心原味鸡蛋卷32大条礼盒装儿童休闲零食糕点饼干",
-                      img: "https://img.alicdn.com/bao/uploaded/TB2i9iuoFXXXXbPXpXXXXXXXXXX_!!0-juitemmedia.jpg_180x180xzq90.jpg_.webp"
-                  },
-                  {
-                      smallTitle: "",
-                      introduce: "秋冬季棉拖鞋包跟厚底情侣家居防滑保暖居家男女月子拖鞋冬天加厚",
-                      img: "https://img.alicdn.com/bao/uploaded/i0/TB1s.15NFXXXXbMaXXXXXXXXXXX_!!0-item_pic.jpg_180x180xzq90.jpg_.webp"
-                  },
-                  {
-                      smallTitle: "",
-                      introduce: "原创品牌日系学生单肩女包百搭休闲文艺小清新简约帆布包布袋大包",
-                      img: "https://img.alicdn.com/bao/uploaded/TB2BnymXX95V1Bjy0FdXXc5BVXa_!!664782798-0-goldwindow.jpg_180x180xzq90.jpg_.webp"
-                  },
-                  {
-                      smallTitle: "",
-                      introduce: "格莱达大容量保温杯男士保温壶户外不锈钢车载旅游保温水壶2L定制",
-                      img: "https://img.alicdn.com/bao/uploaded/TB2jQl2ml0kpuFjy1zdXXXuUVXa_!!0-juitemmedia.jpg_180x180xzq90.jpg_.webp"
-                  }
-              ]
-          }
       ];
-      //   热卖单品
       export const hotSaleList = [{
               title: "2016年春Gillivo嘉里奥新款零钱包正品专柜",
               detailImg: "https://img.alicdn.com/bao/uploaded/i3/446693207/TB283ZslFXXXXX4XXXXXXXXXXXX_!!446693207.jpg_200x200q90.jpg_.webp",
@@ -131,20 +97,20 @@
       ]
 
       //   导航栏
-      export const navList = [{
-              imgSrc: 'clothes.jpg',
-              name: '衣服'
+      export const navList = [
+          {
+              imgSrc: 'cartoon.jpg',
+              name: '动漫'
+          },{
+              imgSrc: 'bl.png',
+              name: '耽美'
           },
           {
-              imgSrc: 'shoes.jpg',
-              name: '鞋子'
+              imgSrc: 'game.png',
+              name: '游戏'
           },
           {
-              imgSrc: 'residence.jpg',
-              name: '家居'
-          },
-          {
-              imgSrc: 'articlesDaily.jpg',
-              name: '生活用品'
+              imgSrc: 'ancient.png',
+              name: '古风'
           }
       ]

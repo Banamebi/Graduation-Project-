@@ -40,14 +40,12 @@ class Home extends Component {
         <div className="headers">
           <span
             className="icon-catalog margin-ft"
-            onClick={this.toggleNav}
+            // onClick={this.toggleNav}
           ></span>
           <span className="title">{title}</span>
-          {/* <span className="icon-jilu margin-ft"></span> */}
           <span className="margin-ft"></span>
         </div>
 
-        {/* component={this.FirstChild} 可有可无*/}
         <ReactCSSTransitionGroup
           component={this.FirstChild}
           transitionName="nav"
@@ -64,10 +62,6 @@ class Home extends Component {
     );
   }
 
-  // tog(e){
-  //   e.stopPropagation();
-  //   console.log(112112);
-  // }
 }
 
 export default Home;

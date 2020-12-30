@@ -3,7 +3,7 @@ import ReactSwipe from "react-swipe";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
 import "../common/style/app.css";
-import { swipeList, activeList, hotSaleList, navList } from "../api/homeData";
+import { swipeList, activeList, hotSaleList, navList,titleList } from "../api/homeData";
 
 class Home extends Component {
   constructor(props) {
@@ -50,9 +50,8 @@ class Home extends Component {
               {activeList.map((item, index) => {
                 return (
                   <li className="items" key={item + index}>
-                    <div className="title">
-                      <img src={item.titleImg} alt={item.bigTitle} />
-                      <span>{item.titleIntroduce}</span>
+                    <div className="title">     
+                       <span>新品</span>
                     </div>
                     <ul className="content">
                       {item.list.map((items, indexs) => {
@@ -78,16 +77,10 @@ class Home extends Component {
               })}
             </ul>
           </div>
-          <div className="recommend">
-            <img
-              src="https://img.alicdn.com/simba/img/TB1pIQFjbr1gK0jSZR0SuvP8XXa.jpg"
-              alt=""
-            />
-          </div>
-          {/* 热卖单品 */}
+          {/* 热卖 */}
           <div className="hot-sale">
             <div className="title">
-              <span>热卖单品</span>
+              <span>热卖</span>
             </div>
             <div className="sale-bodyblock">
               <ul>

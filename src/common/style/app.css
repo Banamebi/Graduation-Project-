@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   width: 100%;
   height: 100%;
   font-size: 0.29866667rem;
@@ -67,8 +67,11 @@ body {
   height: 1.06666667rem;
 }
 .home .bodyblock .block-active ul .items .title span {
-  font-size: 0.34133333rem;
-  color: #999999;
+  border-left: 0.21333333rem solid #dc143c;
+}
+.home .bodyblock .block-active ul .items .title span {
+  font-size: 0.8533333rem;
+  color: #dc143c;
 }
 .home .bodyblock .block-active ul .items .title span {
   padding-left: 0.42666667rem;
@@ -155,11 +158,11 @@ body {
   padding-left: 0.85333333rem;
 }
 .home .bodyblock .hot-sale .title span {
-  border-left: 0.21333333rem solid #ff190b;
+  border-left: 0.21333333rem solid #dc143c;
 }
 .home .bodyblock .hot-sale .title span {
   padding-left: 0.64rem;
-  color: #FF5A27;
+  color: #dc143c;
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul {
   display: flex;
@@ -202,7 +205,7 @@ body {
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .mark,
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .price {
-  color: #F40;
+  color: #f40;
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .mark {
   font-size: 0.256rem;
@@ -223,7 +226,7 @@ body {
   padding-bottom: 3.62666667rem;
 }
 .my {
-  background-color: #EBEFF8;
+  background-color: #ebeff8;
 }
 .my .bodyblock {
   padding-top: 2.09066667rem;
@@ -233,7 +236,7 @@ body {
   width: 100%;
 }
 .my .bodyblock .top {
-  background: url("../images/bg.jpg") no-repeat -10.66666667rem 0px;
+  background: #FFE4E1;
 }
 .my .bodyblock .top .actor {
   padding: 2.13333333rem;
@@ -397,11 +400,6 @@ body {
   margin-top: 0.53333333rem;
   background-color: #fff;
 }
-.info {
-  background: url('../../common/images/chat.jpg') 100% 100%;
-  width: 100%;
-  height: 100vh;
-}
 .category {
   padding-top: 2.09066667rem;
 }
@@ -439,7 +437,7 @@ body {
   line-height: 2.304rem;
 }
 .category .nav .tab-nav .tab-ul .active {
-  color: #F85959;
+  color: #f85959;
 }
 .category .nav .tab-nav::-webkit-scrollbar {
   width: 0 !important;
@@ -551,7 +549,7 @@ body {
 }
 .cart .content .item .item_wrap .bottoms .left {
   font-size: 0.85333333rem;
-  color: #FD2842;
+  color: #fd2842;
 }
 .cart .content .item .item_wrap .bottoms .operate {
   display: flex;
@@ -627,11 +625,11 @@ body {
   padding-left: 0.64rem;
 }
 .cart .footer_wrap .wrap-lt .rts span {
-  color: #FD2842;
+  color: #fd2842;
 }
 .cart .footer_wrap .wrap-rt {
   padding: 0.42666667rem 0;
-  background-color: #FD2842;
+  background-color: #fd2842;
   margin-right: 0.42666667rem;
 }
 .cart .footer_wrap .wrap-rt {
