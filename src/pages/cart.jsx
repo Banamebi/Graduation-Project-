@@ -7,59 +7,26 @@ class Category extends Component {
   state = {
     dataList: [
       {
-        kinds: "you can do it",
+        kinds: "VOCALOID人声",
         list: [
           {
-            img: "https://gw.alicdn.com/bao/uploaded/i4/671012022/O1CN01BdAQo11Qo7PhoGgk2_!!671012022.jpg_180x180xz.jpg_.webp",
-            title: "MIUCO喇叭袖波点网纱衬衫+钉珠V领收腰背心裙连衣裙女2020春新款k",
-            price: 278.2,
-            num: 1,
-            checked: false
-          },
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i3/1122110005/O1CN018uhXao1BuKZMO0C7O_!!1122110005.jpg_180x180xz.jpg_.webp",
-            title: "新款裙子女2019时尚流行针织连衣裙秋冬智熏法式V领修身桔梗裙ins",
-            price: 99,
-            num: 1,
-            checked: false
-          },
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i1/55391412/O1CN01Obt2Sa1MIjp3dcZor_!!0-item_pic.jpg_180x180xz.jpg_.webp",
-            title: "雅宿 韩版秋冬加绒加厚格子衬衫女复古港风2019秋冬新款上衣pl51",
-            price: 79,
-            num: 1,
-            checked: false
-          },
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i1/63290421/O1CN01lpkTW01EyrK14efYi_!!0-item_pic.jpg_180x180xz.jpg_.webp",
-            title: "【多件多折】唐狮2019秋新款休闲裤  女休闲裤休闲时尚长裤学生",
-            price: 149,
-            num: 1,
-            checked: false
-          }
-        ]
-      },
-      {
-        kinds: "时光逆流店",
-        list: [
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i3/67305615/O1CN01TiTJX01rLiTq6OdGF_!!0-item_pic.jpg_180x180xz.jpg_.webp",
-            title: "西林家19冬新款法式气质大蜜豆同款遮肉显瘦系带高腰阔腿牛仔裤女",
-            price: 139.99,
-            num: 1,
-            checked: false
-          },
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i1/1607659423/O1CN01g2taRO2JTmhMLOnRM_!!1607659423.jpg_180x180xz.jpg_.webp",
-            title: "冬慵懒宽松趣味笑脸刺绣加绒加厚卫衣运动休闲连帽外套学生绒衫女",
-            price: 95,
-            num: 1,
-            checked: false
-          },
-          {
-            img: "https://gw.alicdn.com/bao/uploaded/i4/70870644/O1CN01RjNmiM1GczdYmKORy_!!70870644.jpg_180x180xz.jpg_.webp",
-            title: "【年末清仓 直降40元】假两件套头卫衣女秋冬宽松羊羔毛绒外套",
+            img: "https://img.alicdn.com/bao/uploaded/i3/TB1qmAuHpXXXXcCXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
+            title: "初音ミク V3 所有音源集合（送V4编辑器）",
             price: 100,
+            num: 1,
+            checked: false
+          },
+          {
+            img: "https://img.alicdn.com/bao/uploaded/i1/881846768/TB2AWk4XVuWBuNjSspnXXX1NVXa_!!881846768.jpg_240x240.jpg",
+            title: "【中日双语】洛天依 V4（附V4编辑器）",
+            price: 65,
+            num: 1,
+            checked: false
+          },
+          {
+            img: "https://img.alicdn.com/bao/uploaded/i3/TB1PvUzHpXXXXcaXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
+            title: "巡音ルカ V4X 所有音源集合（送V4编辑器）",
+            price: 105,
             num: 1,
             checked: false
           }
