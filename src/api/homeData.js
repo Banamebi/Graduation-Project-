@@ -1,102 +1,100 @@
-
       export const swipeList = [
           "/swiper1.jpg",
           "/swiper2.jpg",
           "/swiper3.jpg",
           "/swiper4.jpg"
       ];
-      export const titleList = [
-        "/new.png"
-      ]
 
       export const activeList = [{
               bigTitle: "新品",
-
-
               list: [{
-                      smallTitle: "可折叠加厚双面使用榻榻米床垫",
-                      introduce: "可以折叠的榻榻米床垫，收纳不占空间，正反两面都可以使用，同时纯棉材质舒适亲肤，透气性好，保持贴身换将干爽 不粘腻。",
-                      img: "https://img.alicdn.com/imgextra/i3/1914575403/TB2Y1CoqQ9WBuNjSspeXXaz5VXa_!!1914575403-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp"
+                      smallTitle: "韩文清生日限定色纸",
+                      introduce: "预售【官方正版】 全职高手 韩文清2020SweetDay生日限定色纸",
+                      img: "http://f.p.cycangcdn.com/1585905699505.jpg"
                   },
                   {
-                      smallTitle: "Puma Defy 赛琳娜限定",
-                      introduce: "设计上继续主打高街风格的科幻元素。",
-                      img: "https://img.alicdn.com/imgextra/i4/1022433859/O1CN01qkuVDn1eNSuEj5e6u_!!1022433859-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp"
+                      smallTitle: "韩文清生日限定挂件",
+                      introduce: "【官方正版】全职高手 韩文清2020sweetday生日限定 挂件",
+                      img: "http://f.p.cycangcdn.com/1585905606891.jpg"
                   },
                   {
-                      smallTitle: "Sofina18年春季限定樱花粉饼",
-                      introduce: "外壳粉嫩渐变，浮雕樱花彰显可爱气质。",
-                      img: "https://img.alicdn.com/imgextra/i1/3158956210/TB2wZ4IepuWBuNjSszbXXcS7FXa_!!3158956210-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp"
+                      smallTitle: "甜品猫盲盒",
+                      introduce: "现货【漫趣】正版 甜品猫 可爱小猫咪 盲盒",
+                      img: "http://f.p.cycangcdn.com/1584969693890.jpg"
                   },
                   {
-                      smallTitle: "大豆家  方头奶奶鞋",
-                      introduce: "一脚蹬设计，方便日常的穿脱。",
-                      img: "https://img.alicdn.com/tfscom/i1/1581756766/TB2TF0ch0zJ8KJjSspkXXbF7VXa_!!1581756766.jpg_180x180xzq90.jpg_.webp"
+                      smallTitle: "星空防晒衫",
+                      introduce: "【风树息-画影】星空 防晒衫",
+                      img: "http://f.p.cycangcdn.com/1560419289232.jpg"
                   },
                   {
-                      smallTitle: "小仙女的花环，甘那许蛋糕模具",
-                      introduce: "选用液态硅胶制作而成，安全卫生。",
-                      img: "https://img.alicdn.com/imgextra/i1/2895773580/O1CN01cfU4V01cJgOdPPJlS_!!2895773580-2-beehive-scenes.png_180x180xzq90.jpg_.webp"
+                      smallTitle: "我家大师兄脑子有坑纪念徽章",
+                      introduce: "我家大师兄脑子有坑四周年纪念徽章 预售",
+                      img: "http://f.p.cycangcdn.com/1565947994655.jpg"
                   },
                   {
-                      smallTitle: "办公室午睡神器",
-                      introduce: "专为午睡设计，使用起来方便舒适。",
-                      img: "https://img.alicdn.com/imgextra/i1/810373898/O1CN01alx0rm1efKNHkAk07_!!810373898-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp"
+                      smallTitle: "魔道祖师Q版挂件",
+                      introduce: "现货【漫踪】正版 魔道祖师 亚克力 蓝忘机魏无羡 钥匙扣Q版挂件",
+                      img: "http://f.p.cycangcdn.com/1584971032382.jpg"
                   }
               ]
           },
       ];
       export const hotSaleList = [{
-              title: "2016年春Gillivo嘉里奥新款零钱包正品专柜",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i3/446693207/TB283ZslFXXXXX4XXXXXXXXXXXX_!!446693207.jpg_200x200q90.jpg_.webp",
-              price: 12,
-              salesVolume: 1
+              title: "现货【荨梦文化】官方正版 bilibili BML2019广州场 主题抱枕",
+              detailImg: "http://f.p.cycangcdn.com/1585020255265.jpg",
+              price: 69,
+              salesVolume: 1111
           },
           {
-              title: "春中大女童学院风娃娃领纯棉中长款风衣外套",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i4/12524484/O1CN01EfZBZA1iziY14s3yh_!!0-saturn_solar.jpg_200x200q90.jpg_.webp",
-              price: 151.1,
-              salesVolume: 6
+              title: "现货【actoys】 正版 猫迷铃铛系列 迷你版手办盲盒",
+              detailImg: "http://f.p.cycangcdn.com/1584970195969.jpg",
+              price: 48,
+              salesVolume: 4000
           },
           {
-              title: "白色破洞牛仔短裤女夏高腰2019新款韩版宽松大码显瘦毛边阔腿热裤",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i1/3201581578/TB1YYNXc1uSBuNjSsziXXbq8pXa_!!0-item_pic.jpg_200x200q90.jpg_.webp",
-              price: 79,
-              salesVolume: 24
+              title: "现货【漫趣】动漫周边 mur猫 毛绒抱枕 靠垫靠枕",
+              detailImg: "http://f.p.cycangcdn.com/1584968819316.jpg",
+              price: 45,
+              salesVolume: 916
           },
           {
-              title: "尼泊尔进口羊毛毡纯手工萌物系列小奶牛单肩包大人/儿童斜挎包女",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i5/TB1ZjgTJVXXXXb2XXXXYXGcGpXX_M2.SS2_200x200q90.jpg_.webp",
-              price: 65,
-              salesVolume: 0
+              title: "【风树息-画影】百鬼夜行·玉藻前 改良和风外套",
+              detailImg: "http://f.p.cycangcdn.com/gallery/1562836826856.jpg",
+              price: 128,
+              salesVolume: 500
           },
           {
-              title: "2020春夏吊带连衣裙明星同款名媛宴会星空亮片裙年会主持晚礼服",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i3/2550641536/TB22OaEe2jM8KJjSZFyXXXdzVXa_!!2550641536.jpg_200x200q90.jpg_.webp",
-              price: 299,
-              salesVolume: 100
+              title: "【伯派商贸】伊诗兰顿 水润BB霜象牙白40g隔离霜打底裸妆粉底化妆前乳液遮瑕cc霜持久保湿防辐射",
+              detailImg: "http://f.p.cycangcdn.com/1539854951844.jpg",
+              price: 39,
+              salesVolume: 2358
           },
           {
-              title: "2019春秋款 横竖条拼圆领休闲宽松卫衣长袖加厚T恤女 卡门T30C106",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i1/62174580/TB2rC4KrbsTMeJjy1zbXXchlVXa_!!62174580.jpg_200x200q90.jpg_.webp",
-              price: 135,
-              salesVolume: 0
+              title: "正版漫威连帽U型枕蜘蛛侠、美国队长、钢铁侠",
+              detailImg: "http://f.p.cycangcdn.com/1546655697104.jpg",
+              price: 89,
+              salesVolume: 301
           },
           {
-              title: "SUNGDO GIN独立设计师春夏新品黑色几何腰金边西装短裤",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i1/45738681/TB2tNLyebRkpuFjSspmXXc.9XXa_!!45738681.jpg_200x200q90.jpg_.webp",
-              price: 342.3,
-              salesVolume: 0
+              title: "【三春九夏】 古风汉服首饰 古典配饰 胸针 【踏雀】",
+              detailImg: "http://f.p.cycangcdn.com/1504093969859.jpg",
+              price: 52,
+              salesVolume: 486
           },
           {
-              title: "T119韩国女装代设计感简约棉质春秋长袖套头女卫衣毛圈新品2019",
-              detailImg: "https://img.alicdn.com/bao/uploaded/i4/75318385/TB2m5FLcbSYBuNjSspiXXXNzpXa_!!75318385.jpg_200x200q90.jpg_.webp",
-              price: 158,
-              salesVolume: 1
-          }
+              title: "【艾漫】冰上的尤里-巧克力",
+              detailImg: "http://f.p.cycangcdn.com/1487297798373.jpg",
+              price: 58,
+              salesVolume: 1500
+          },
+          {
+            title: "【风树息-画影】草莓 改良羽织",
+            detailImg: "http://f.p.cycangcdn.com/1562835711071.jpg",
+            price: 108,
+            salesVolume: 299
+        }
       ]
-
-      //   导航栏
       export const navList = [
           {
               imgSrc: 'cartoon.jpg',

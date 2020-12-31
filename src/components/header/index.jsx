@@ -38,12 +38,7 @@ class Home extends Component {
     return (
       <div>
         <div className="headers">
-          <span
-            className="icon-catalog margin-ft"
-            // onClick={this.toggleNav}
-          ></span>
           <span className="title">{title}</span>
-          <span className="margin-ft"></span>
         </div>
 
         <ReactCSSTransitionGroup

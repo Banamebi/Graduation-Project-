@@ -111,7 +111,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
-  color: #333;
+  color: #dc143c;
   font-size: 0.46933333rem;
 }
 .home .bodyblock .block-active ul .items .content li .rt .smallTitle {
@@ -182,7 +182,7 @@ body {
   height: 6.4rem;
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul li p {
-  color: #333333;
+  color: #000;
   margin: 0 0.72533333rem;
   text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
@@ -205,7 +205,7 @@ body {
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .mark,
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .price {
-  color: #f40;
+  color: #dc143c;
 }
 .home .bodyblock .hot-sale .sale-bodyblock ul li .hot-bt .mark {
   font-size: 0.256rem;
@@ -234,9 +234,6 @@ body {
 .my .bodyblock .top {
   height: 8.53333333rem;
   width: 100%;
-}
-.my .bodyblock .top {
-  background: #FFE4E1;
 }
 .my .bodyblock .top .actor {
   padding: 2.13333333rem;
@@ -437,7 +434,7 @@ body {
   line-height: 2.304rem;
 }
 .category .nav .tab-nav .tab-ul .active {
-  color: #f85959;
+  color: #dc143c;
 }
 .category .nav .tab-nav::-webkit-scrollbar {
   width: 0 !important;

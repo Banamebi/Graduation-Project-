@@ -42,9 +42,9 @@ class Category extends Component {
                 )}
               </div>
               <div className="text">
-                <span className="user-name">molly</span>
+                <span className="user-name">赤司征十郎</span>
                 <span className="sign">
-                  时间，带不走真正的朋友；岁月，留不住虚幻的拥有。
+                  犹豫就会败北。
                 </span>
               </div>
             </div>
@@ -107,7 +107,7 @@ class Category extends Component {
               <div className="about-li">
                 <div className="left">
                   <img
-                    src={require("../common/images/PayResources.jpg")}
+                    src={require("../common/images/payResources.png")}
                     alt=""
                   />
                 </div>
@@ -123,7 +123,7 @@ class Category extends Component {
               <div className="about-li">
                 <div className="left">
                   <img
-                    src={require("../common/images/payChannel.jpg")}
+                    src={require("../common/images/payChannel.png")}
                     alt=""
                   />
                 </div>

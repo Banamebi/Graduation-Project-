@@ -1,34 +1,34 @@
 export const orderList = [{
-        imgSrc: "substitutePay.jpg",
-        name: "代付款"
+        imgSrc: "substitutePay.png",
+        name: "待付款"
     },
     {
-        imgSrc: "collectGoods.jpg",
+        imgSrc: "collectGoods.png",
         name: "待收货"
     },
     {
-        imgSrc: "generationEvaluation.jpg",
+        imgSrc: "generationEvaluation.png",
         name: "待评价"
     },
     {
-        imgSrc: "refund.jpg",
+        imgSrc: "refund.png",
         name: "退款/售后"
     }
 ];
 export const aboutList = [{
-        imgSrc: "wallet.jpg",
+        imgSrc: "wallet.png",
         name: "我的钱包"
     },
     {
-        imgSrc: "collection.jpg",
+        imgSrc: "collection.png",
         name: "我的收藏"
     },
     {
-        imgSrc: "recommendation.jpg",
+        imgSrc: "recommendation.png",
         name: "我的推荐"
     },
     {
-        imgSrc: "points.jpg",
+        imgSrc: "points.png",
         name: "我的积分"
     }
 ]

@@ -40,6 +40,7 @@ class Home extends Component {
                   />
                   <span>{item.name}</span>
                 </li>
+              
               );
             })}
           </ul>
