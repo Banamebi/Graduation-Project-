@@ -3,18 +3,27 @@ import ReactSwipe from "react-swipe";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
 import "../common/style/app.css";
-import { swipeList, activeList, hotSaleList, navList,titleList } from "../api/homeData";
+import {
+  swipeList,
+  activeList,
+  hotSaleList,
+  navList,
+  // urlList,
+  // titleList,
+} from "../api/homeData";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      index: 0
+      index: 0,
     };
   }
-  swipersOnclick=()=>{
-    window.location.href='https://www.acgmh.com/'
-  }
+
+  swipersOnclick = () => {
+    window.location.href = "https://www.acgmh.com/";
+  };
+
   render() {
     return (
       <div className="home">
@@ -27,8 +36,10 @@ class Home extends Component {
           {swipeList.map((item, index) => {
             return (
               <div key={index} className="swiper">
-                <img src={require("../common/images" + item)} 
-                onClick={this.swipersOnclick} />
+                <img
+                  src={require("../common/images" + item)}
+                  onClick={this.swipersOnclick}
+                />
               </div>
             );
           })}
@@ -38,13 +49,14 @@ class Home extends Component {
             {navList.map((item, index) => {
               return (
                 <li>
-                  <img
-                    src={require("../common/images/" + item.imgSrc)}
-                    alt=""
-                  />
-                  <span>{item.name}</span>
+                  <figure>
+                    <img
+                      src={require("../common/images/" + item.imgSrc)}
+                      // onClick={ }
+                    />
+                    <figcaption className="figcaption">{item.name}</figcaption>
+                  </figure>
                 </li>
-              
               );
             })}
           </ul>
@@ -55,8 +67,8 @@ class Home extends Component {
               {activeList.map((item, index) => {
                 return (
                   <li className="items" key={item + index}>
-                    <div className="title">     
-                       <span>新品</span>
+                    <div className="title">
+                      <span>新品</span>
                     </div>
                     <ul className="content">
                       {item.list.map((items, indexs) => {
