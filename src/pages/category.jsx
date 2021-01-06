@@ -18,7 +18,7 @@ class Category extends Component {
       { id: 9, name: "游戏" },
       { id: 10, name: "V家" },
     ],
-    id: 10
+    id: 1
   };
 
   checkNav(id) {

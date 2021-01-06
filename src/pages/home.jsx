@@ -12,6 +12,9 @@ class Home extends Component {
       index: 0
     };
   }
+  swipersOnclick=()=>{
+    window.location.href='https://www.acgmh.com/'
+  }
   render() {
     return (
       <div className="home">
@@ -24,7 +27,8 @@ class Home extends Component {
           {swipeList.map((item, index) => {
             return (
               <div key={index} className="swiper">
-                <img src={require("../common/images" + item)} alt="" />
+                <img src={require("../common/images" + item)} 
+                onClick={this.swipersOnclick} />
               </div>
             );
           })}
