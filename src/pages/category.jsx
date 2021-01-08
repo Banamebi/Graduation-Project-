@@ -18,9 +18,11 @@ class Category extends Component {
       { id: 9, name: "游戏" },
       { id: 10, name: "V家" },
     ],
-    id: 1
+    id: 1,
   };
-
+  componentDidMount() {
+    console.log(111, this.props);
+  }
   checkNav(id) {
     this.setState({ id: id });
   }

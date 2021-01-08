@@ -35,7 +35,9 @@ body {
   padding: 0.64rem 0;
 }
 .figcaption {
-  margin-left: 0.3rem;
+  margin-left: 0.45rem;
+  margin-top: 00.256rem;
+  color: #dc143c;
 }
 .home .nav ul li img {
   width: 2.13333333rem;
@@ -72,6 +74,14 @@ body {
 }
 .home .bodyblock .block-active ul .items .title span {
   padding-left: 0.42666667rem;
+}
+.friend {
+  border-left: 0.21333333rem solid #dc143c;
+  font-size: 0.8533333rem;
+  color: #dc143c;
+  padding-left: 0.42666667rem;
+  margin-left: 0.55rem;
+  padding-top: 0.2rem;
 }
 .home .bodyblock .block-active ul .items .content {
   padding-top: 0.21333333rem;

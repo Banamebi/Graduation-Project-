@@ -96,19 +96,23 @@
         }
       ]
       export const navList = [
-          {
-              imgSrc: 'cartoon.jpg',
-              name: '动漫'
-          },{
-              imgSrc: 'bl.png',
-              name: '耽美'
+      
+        {
+              imgSrc: 'bilibili.png',
+              name: 'B站',
+              url:'https://www.bilibili.com/'
           },
           {
-              imgSrc: 'game.png',
-              name: '游戏'
+            imgSrc: 'acfun.png',
+            name: 'A站',
+            url:'https://www.bilibili.com/'
+        },
+          {
+              imgSrc: 'pixiv.png',
+              name: 'P站'
           },
           {
-              imgSrc: 'ancient.png',
-              name: '古风'
+              imgSrc: 'niconico.png',
+              name: 'N站'
           }
       ]

@@ -3,15 +3,11 @@ import ReactSwipe from "react-swipe";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
 import "../common/style/app.css";
-import {
-  swipeList,
-  activeList,
-  hotSaleList,
-  navList,
-  // urlList,
-  // titleList,
-} from "../api/homeData";
-
+import { swipeList, activeList, hotSaleList } from "../api/homeData";
+import bilibili from "../common/images/bilibili.png";
+import acfun from "../common/images/acfun.png";
+import pixiv from "../common/images/pixiv.png";
+import niconico from "../common/images/niconico.png";
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -45,20 +41,48 @@ class Home extends Component {
           })}
         </ReactSwipe>
         <div className="nav">
+          <div className="friend">友链</div>
           <ul>
-            {navList.map((item, index) => {
-              return (
-                <li>
-                  <figure>
-                    <img
-                      src={require("../common/images/" + item.imgSrc)}
-                      // onClick={ }
-                    />
-                    <figcaption className="figcaption">{item.name}</figcaption>
-                  </figure>
-                </li>
-              );
-            })}
+            <li>
+              <figure
+                onClick={() => {
+                  window.location.href = "https://bilibili.com";
+                }}
+              >
+                <img src={bilibili} />
+                <figcaption className="figcaption">B站</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                onClick={() => {
+                  window.location.href = "https://www.acfun.cn/";
+                }}
+              >
+                <img src={acfun} />
+                <figcaption className="figcaption">A站</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                onClick={() => {
+                  window.location.href = " https://www.pixiv.net";
+                }}
+              >
+                <img src={pixiv} />
+                <figcaption className="figcaption">P站</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                onClick={() => {
+                  window.location.href = "http://www.nicovideo.jp/";
+                }}
+              >
+                <img src={niconico} />
+                <figcaption className="figcaption">N站</figcaption>
+              </figure>
+            </li>
           </ul>
         </div>
         <div className="bodyblock">
