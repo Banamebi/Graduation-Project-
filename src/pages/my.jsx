@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "../common/style/app.css";
+import { Link } from "react-router-dom";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
 import { orderList, aboutList } from "../api/myData";
 
 class Category extends Component {
   state = {
-    avator: ""
+    avator: "",
   };
 
   // 动态添加图片
@@ -17,7 +18,7 @@ class Category extends Component {
       var reader = new FileReader();
       reader.readAsDataURL(file1);
 
-      reader.onload = function(e) {
+      reader.onload = function (e) {
         _this.setState({ avator: e.target.result });
       };
     }
@@ -43,9 +44,7 @@ class Category extends Component {
               </div>
               <div className="text">
                 <span className="user-name">赤司征十郎</span>
-                <span className="sign">
-                  犹豫就会败北。
-                </span>
+                <span className="sign">犹豫就会败北。</span>
               </div>
             </div>
           </div>
@@ -103,38 +102,6 @@ class Category extends Component {
                 );
               })}
             </ul>
-            <div className="pay-resource">
-              <div className="about-li">
-                <div className="left">
-                  <img
-                    src={require("../common/images/payResources.png")}
-                    alt=""
-                  />
-                </div>
-                <div className="right noborder">
-                  <span className="lt">付款资源</span>
-                  <div className="rt">
-                    <img src={require("../common/images/arrow.png")} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="pay-resource">
-              <div className="about-li">
-                <div className="left">
-                  <img
-                    src={require("../common/images/payChannel.png")}
-                    alt=""
-                  />
-                </div>
-                <div className="right noborder">
-                  <span className="lt">支付渠道</span>
-                  <div className="rt">
-                    <img src={require("../common/images/arrow.png")} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <Footer />

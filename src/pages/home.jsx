@@ -98,14 +98,31 @@ class Home extends Component {
                       {item.list.map((items, indexs) => {
                         return (
                           <li key={items + indexs}>
-                            <img src={items.img} alt="" />
+                            <img
+                              src={items.img}
+                              onClick={() => {
+                                window.location.href = "http://www.baidu.com/";
+                              }}
+                            />
                             <div className="rt">
                               {items.smallTitle && (
-                                <span className="smallTitle">
+                                <span
+                                  className="smallTitle"
+                                  onClick={() => {
+                                    window.location.href =
+                                      "http://www.baidu.com/";
+                                  }}
+                                >
                                   {items.smallTitle}
                                 </span>
                               )}
-                              <span className="introduce">
+                              <span
+                                className="introduce"
+                                onClick={() => {
+                                  window.location.href =
+                                    "http://www.baidu.com/";
+                                }}
+                              >
                                 {items.introduce}
                               </span>
                             </div>
@@ -118,8 +135,8 @@ class Home extends Component {
               })}
             </ul>
           </div>
-          {/* 热卖 */}
-          <div className="hot-sale">
+
+          <div className="hot-sale">  
             <div className="title">
               <span>热卖</span>
             </div>
