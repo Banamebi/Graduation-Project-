@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Route from "./router";
 import FastClick from "fastclick";
 import { AppContainer } from "react-hot-loader";
+import 'antd-mobile/dist/antd-mobile.css';
 import { Provider } from "react-redux";
 import store from "./store";
 import * as serviceWorker from "./serviceWorker";

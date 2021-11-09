@@ -1,0 +1,25 @@
+.img {
+    margin-top: 35px;
+    padding:20px;
+}
+
+.goodstitle {
+    padding:10px;
+    width:90%;
+    margin: auto;
+
+}
+.back{
+    position:fixed;
+    bottom: 0px;
+    height:47px;
+    left: 0%;
+    width: 50%; 
+}
+.action {
+    position:fixed;
+    bottom: 0px;
+    height:47px;
+    right: 0%;
+    width: 50%;
+}

@@ -35,3 +35,9 @@ body {
   margin-top: 2.09066667rem;
   z-index: 99;
 }
+.lgdown{
+  margin-top: 10%; 
+}
+.am-button.am-button-primary.am-button-small{
+  background-color: #dc143c;
+}

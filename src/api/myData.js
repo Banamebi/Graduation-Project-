@@ -30,5 +30,10 @@ export const aboutList = [{
     {
         imgSrc: "points.png",
         name: "我的积分"
+    },
+    {
+        imgSrc: "quit.png",
+        name: "退出登录",
+        type:true
     }
 ]

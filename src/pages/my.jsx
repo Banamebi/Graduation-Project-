@@ -23,6 +23,11 @@ class Category extends Component {
       };
     }
   }
+  loginOut(type) {
+    if(type) {
+      this.props.history.replace('/login')
+    }
+  }
 
   render() {
     return (
@@ -39,12 +44,11 @@ class Category extends Component {
                 />
                 {this.state.avator && <img src={this.state.avator} alt="" />}
                 {!this.state.avator && (
-                  <img src={require("../common/images/avator.jpg")} alt="" />
+                  <img src={require("../common/images/上传头像.png")} alt="" />
                 )}
               </div>
               <div className="text">
-                <span className="user-name">赤司征十郎</span>
-                <span className="sign">犹豫就会败北。</span>
+                <span className="user-name">上传头像</span>
               </div>
             </div>
           </div>
@@ -76,7 +80,9 @@ class Category extends Component {
             <ul className="about-ul">
               {aboutList.map((item, index) => {
                 return (
-                  <li className="about-li" key={item + index}>
+                  <li className="about-li" key={item + index} onClick={()=>{
+                    this.loginOut(item.type)
+                  }}>
                     <div className="left">
                       <img
                         src={require("../common/images/" + item.imgSrc)}

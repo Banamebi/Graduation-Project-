@@ -4,7 +4,7 @@ body {
   height: 100%;
   font-size: 0.29866667rem;
 }
-.home .swipers {
+.home . {
   padding-top: 2.09066667rem;
 }
 .home .swipers .swiper {
@@ -276,6 +276,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  background-color:#fff;
 }
 .my .bodyblock .top .actor .text {
   padding-left: 0.98133333rem;
@@ -635,6 +636,7 @@ body {
   padding: 0.42666667rem 0;
   background-color: #dc143c;
   margin-right: 0.42666667rem;
+  border-radius:10px;
 }
 .cart .footer_wrap .wrap-rt {
   padding-left: 1.06666667rem;

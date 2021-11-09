@@ -1,42 +1,83 @@
 import React, { Component } from "react";
+import { message, Button } from "antd";
 import "../common/style/app.css";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
-
+import beforeselect from "../common/images/beforeselect.png";
+import select from "../common/images/select.png";
+import {Toast } from 'antd-mobile';
 class Category extends Component {
   state = {
     dataList: [
       {
-        kinds: "VOCALOID人声",
+        kinds: "全部商品",
         list: [
           {
-            img: "https://img.alicdn.com/bao/uploaded/i3/TB1qmAuHpXXXXcCXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
+            img:
+              "https://img.alicdn.com/bao/uploaded/i3/TB1qmAuHpXXXXcCXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
             title: "初音ミク V3 所有音源集合（送V4编辑器）",
             price: 100,
             num: 1,
-            checked: false
+            checked: false,
           },
           {
-            img: "https://img.alicdn.com/bao/uploaded/i1/881846768/TB2AWk4XVuWBuNjSspnXXX1NVXa_!!881846768.jpg_240x240.jpg",
+            img:
+              "https://img.alicdn.com/bao/uploaded/i1/881846768/TB2AWk4XVuWBuNjSspnXXX1NVXa_!!881846768.jpg_240x240.jpg",
             title: "【中日双语】洛天依 V4（附V4编辑器）",
             price: 65,
             num: 1,
-            checked: false
+            checked: false,
           },
           {
-            img: "https://img.alicdn.com/bao/uploaded/i3/TB1PvUzHpXXXXcaXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
+            img:
+              "https://img.alicdn.com/bao/uploaded/i3/TB1PvUzHpXXXXcaXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg",
             title: "巡音ルカ V4X 所有音源集合（送V4编辑器）",
             price: 105,
             num: 1,
-            checked: false
-          }
-        ]
-      }
+            checked: false,
+          },
+        ],
+      },
     ],
     isChecked: false, // 是否全选
     checkList: [], // 选中的项
-    buyPrice: 0 // 结算总价
+    buyPrice: 0, // 结算总价
   };
+
+  deepClone(source) {
+    if (!source && typeof source !== "object") {
+      throw new Error("error arguments", "shallowClone");
+    }
+    const targetObj = source.constructor === Array ? [] : {};
+    for (const keys in source) {
+      if (source.hasOwnProperty(keys)) {
+        if (source[keys] && typeof source[keys] === "object") {
+          targetObj[keys] = source[keys].constructor === Array ? [] : {};
+          targetObj[keys] = this.deepClone(source[keys]);
+        } else {
+          targetObj[keys] = source[keys];
+        }
+      }
+    }
+    return targetObj;
+  }
+  componentDidMount() {
+    console.log(JSON.parse(localStorage.getItem("goodsList")));
+    let goodsList = localStorage.getItem("goodsList")
+      ? JSON.parse(localStorage.getItem("goodsList"))
+      : [];
+    let arr = goodsList.map((child) => {
+      return {
+        ...child,
+        title: child.introduce,
+        num: 1,
+        checkedL: false,
+      };
+    });
+    let cpData = this.deepClone(this.state.dataList);
+    cpData[0].list = arr;
+    this.setState({ dataList: cpData });
+  }
 
   // 单选
   selectItem(item) {
@@ -44,7 +85,7 @@ class Category extends Component {
     item.checked = !item.checked;
     this.getCheck();
     this.setState({
-      isChecked: this.isCheckedAll()
+      isChecked: this.isCheckedAll(),
     });
   }
 
@@ -60,12 +101,12 @@ class Category extends Component {
         const item1 = item.list[j];
         item1.checked = !isSelectAll;
         this.setState({
-          isChecked: !isSelectAll
+          isChecked: !isSelectAll,
         });
       }
     }
     this.setState({
-      dataList: [...lists]
+      dataList: [...lists],
     });
     this.getCheck();
   }
@@ -104,10 +145,10 @@ class Category extends Component {
     console.log("checkList===>选中的项", checkList);
     let buyPrice = 0;
     if (checkList.length > 0) {
-      checkList.forEach(item => {
+      checkList.forEach((item) => {
         buyPrice = buyPrice + item.price * item.num;
         this.setState({
-          buyPrice: buyPrice
+          buyPrice: buyPrice,
         });
       });
     }
@@ -115,7 +156,7 @@ class Category extends Component {
 
     this.setState({
       buyPrice: buyPrice,
-      checkList: [...checkList]
+      checkList: [...checkList],
     });
     console.log("this.state.buyPrice==>", this.state.buyPrice);
   }
@@ -146,10 +187,10 @@ class Category extends Component {
 
     let buyPrice = 0;
     if (checkList.length > 0) {
-      checkList.forEach(item3 => {
+      checkList.forEach((item3) => {
         buyPrice = buyPrice + item3.price * item3.num;
         this.setState({
-          buyPrice: buyPrice
+          buyPrice: buyPrice,
         });
       });
     }
@@ -158,7 +199,7 @@ class Category extends Component {
     this.setState({
       dataList: [...list],
       checkList: [...checkList],
-      buyPrice: buyPrice
+      buyPrice: buyPrice,
     });
     console.log("===>", list);
     console.log("checkList===>", this.state.checkList);
@@ -175,7 +216,7 @@ class Category extends Component {
           if (item2.num > 0) {
             item2.num--;
             this.setState({
-              dataList: [...list]
+              dataList: [...list],
             });
             this.getAllPrice();
           }
@@ -194,7 +235,7 @@ class Category extends Component {
           console.log(item2);
           item2.num++;
           this.setState({
-            dataList: [...list]
+            dataList: [...list],
           });
           this.getAllPrice();
         }
@@ -207,13 +248,13 @@ class Category extends Component {
     let list = [...this.state.checkList];
     let buyPrice = 0;
     if (list.length > 0) {
-      list.forEach(item => {
+      list.forEach((item) => {
         buyPrice = buyPrice + item.price * item.num;
       });
     }
 
     this.setState({
-      buyPrice: buyPrice
+      buyPrice: buyPrice,
     });
   }
 
@@ -236,18 +277,10 @@ class Category extends Component {
                             onClick={this.selectItem.bind(this, item1)}
                           >
                             {item1.checked && (
-                              <img
-                                className="select"
-                                src="https://i.loli.net/2020/03/05/2ODunK73vlaHhIw.png"
-                                alt=""
-                              />
+                              <img className="select" src={select} />
                             )}
                             {!item1.checked && (
-                              <img
-                                className="select"
-                                src="https://i.loli.net/2020/03/05/zaBLDGlk2dCUwZQ.png"
-                                alt=""
-                              />
+                              <img className="select" src={beforeselect} />
                             )}
                           </div>
                           <img className="btimg" src={item1.img} alt="" />
@@ -296,18 +329,8 @@ class Category extends Component {
           <div className="wrap-lt">
             <div className="lts" onClick={this.selectAll.bind(this)}>
               <div className="select_wrap">
-                {this.state.isChecked && (
-                  <img
-                    src="https://i.loli.net/2020/03/05/2ODunK73vlaHhIw.png"
-                    alt=""
-                  />
-                )}
-                {!this.state.isChecked && (
-                  <img
-                    src="https://i.loli.net/2020/03/05/zaBLDGlk2dCUwZQ.png"
-                    alt=""
-                  />
-                )}
+                {this.state.isChecked && <img src={select} />}
+                {!this.state.isChecked && <img src={beforeselect} />}
               </div>
               <div className="allselect">全选</div>
             </div>
@@ -315,7 +338,16 @@ class Category extends Component {
               总计：<span>￥{this.state.buyPrice}</span>
             </div>
           </div>
-          <div className="wrap-rt">去结算({this.state.checkList.length})</div>
+          {/* <div
+            className="wrap-rt"
+            onClick={message.info("This is a normal message")}
+          >
+            去结算({this.state.checkList.length})
+          </div> */}
+          <Button type="primary" className="wrap-rt"
+          onClick={() => Toast.success(`总金额为${this.state.buyPrice}`)} >
+          去结算({this.state.checkList.length})
+          </Button>
         </div>
         <Footer />
       </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import ReactSwipe from "react-swipe";
 import AHeader from "../components/header";
 import Footer from "../components/footer";
@@ -19,6 +20,10 @@ class Home extends Component {
   swipersOnclick = () => {
     window.location.href = "https://www.acgmh.com/";
   };
+  routerTo(items) {
+    localStorage.setItem("goods",JSON.stringify(items))
+    this.props.history.push({pathname: `/Detail`})
+  }
 
   render() {
     return (
@@ -89,6 +94,7 @@ class Home extends Component {
           <div className="block-active">
             <ul>
               {activeList.map((item, index) => {
+                console.log(item);
                 return (
                   <li className="items" key={item + index}>
                     <div className="title">
@@ -100,28 +106,23 @@ class Home extends Component {
                           <li key={items + indexs}>
                             <img
                               src={items.img}
-                              onClick={() => {
-                                window.location.href = "http://www.baidu.com/";
-                              }}
+                              onClick={() => this.routerTo(items)
+                              }
                             />
                             <div className="rt">
                               {items.smallTitle && (
                                 <span
                                   className="smallTitle"
-                                  onClick={() => {
-                                    window.location.href =
-                                      "http://www.baidu.com/";
-                                  }}
+                                  onClick={() => this.routerTo(items)
+                                  }
                                 >
                                   {items.smallTitle}
                                 </span>
                               )}
                               <span
                                 className="introduce"
-                                onClick={() => {
-                                  window.location.href =
-                                    "http://www.baidu.com/";
-                                }}
+                                onClick={() => this.routerTo(items)
+                                }
                               >
                                 {items.introduce}
                               </span>
@@ -143,16 +144,17 @@ class Home extends Component {
             <div className="sale-bodyblock">
               <ul>
                 {hotSaleList.map((item, index) => {
+                  
                   return (
                     <li key={item + index}>
-                      <img src={item.detailImg} alt="" />
+                      <img src={item.img} onClick={() => this.routerTo(item)}/>
                       <p>{item.title}</p>
                       <div className="hot-bt">
                         <span>
                           <span className="mark">￥</span>
                           <span className="price">{item.price}</span>
                         </span>
-                        <span className="volume">
+                        <span className="volume" >
                           {item.salesVolume !== 0
                             ? "销量：" + item.salesVolume
                             : ""}
